@@ -1,0 +1,6 @@
+# .gitignore
+euro24-venv/
+__pycache__/
+*.pyc
+outputs/
+EURO24-critical-care-capacity-metrics.xlsx
