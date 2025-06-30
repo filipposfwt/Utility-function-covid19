@@ -4,3 +4,10 @@ __pycache__/
 *.pyc
 outputs/
 EURO24-critical-care-capacity-metrics.xlsx
+euro24-venv-py311/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
