@@ -4,28 +4,28 @@ This project analyzes COVID-19 death data in Greece using feature selection, LST
 
 ## Setup
 
-### 1. Clone the github repository:
+### Clone the github repository:
 ```bash
 git clone https://github.com/filipposfwt/Utility-function-covid19
 cd Utility-function-covid19
 ```
-### 2. Install Python 3.11** (if not already installed):
+### Install Python 3.11 (if not already installed):
 
 TensorFlow usually lags behind the latest Python versions because it has many native components and dependencies that must be compiled and tested across platforms. As of now (mid-2025), TensorFlow supports up to Python 3.11.
 
 
-### 3. Create a new virtual environment using Python 3.11:
+### Create a new virtual environment using Python 3.11:
 
 ```bash
 /opt/homebrew/bin/python3.11 -m venv euro24-venv-py311
 ```
 
-### 4. Activate the new environment:
+### Activate the new environment:
 ```bash
 source euro24-venv-py311/bin/activate
 ```
 
-### 5. Install the required packages:
+### Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
