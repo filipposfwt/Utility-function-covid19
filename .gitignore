@@ -11,3 +11,5 @@ euro24-venv-py311/
 
 # MacOS
 .DS_Store
+
+cases_GR.csv
