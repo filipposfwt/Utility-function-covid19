@@ -38,4 +38,37 @@ To execute the full analysis pipeline, run:
 python main.py
 ```
 
-You will be prompted to enter the path to your COVID cases CSV file (e.g. `/Users/.../cases_GR.csv`). The script will sequentially execute all analysis steps and output results to `/data/outputs` or as specified in the scripts.
+You will be prompted to enter the path to your COVID cases CSV file (e.g. /Users/.../cases_GR.csv). The script will then allow you to interactively select which analysis steps to run, including:
+
+- 01_feature_selection.py — Recursive Feature Elimination
+- 02_lstm_prediction.py — LSTM model forecasting
+- 03_utility_function_calculation.py — Utility modeling and polynomial regression
+- 04_curve_fitting_drl.py — Deep Reinforcement Learning-based curve fitting
+
+Each step is optional, and you can run only the ones you’re interested in.
+
+All results are saved in `output/<step>/<timestamp>/`, where `<timestamp>` is the date and time when you launched `main.py`.
+
+## Running the Pipeline
+
+Each script in the pipeline can also be run independently, in order to perform a specific analysis stage.
+
+### Example Usage
+
+#### Step 1 - Feature Selection
+```bash
+python 01_feature_selection.py /path/to/cases_GR.csv <timestamp>
+```
+#### Step 2 - Feature Selection LSTM
+```bash
+python 02_lstm_prediction.py /path/to/cases_GR.csv <timestamp>
+```
+#### Step 3 — Utility Function Calculation
+```bash
+python 03_utility_function_calculation.py /path/to/cases_GR.csv <timestamp>
+```
+#### Step 4 — DRL Curve Fitting
+```bash
+python 04_curve_fitting_drl.py <timestamp>
+```
+Replace <timestamp> with the desired folder name (e.g., 20250702_1530) to keep outputs organized.

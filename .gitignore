@@ -2,7 +2,7 @@
 euro24-venv/
 __pycache__/
 *.pyc
-outputs/
+output/
 EURO24-critical-care-capacity-metrics.xlsx
 euro24-venv-py311/
 
