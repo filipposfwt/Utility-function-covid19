@@ -49,7 +49,7 @@ Each step is optional, and you can run only the ones you’re interested in.
 
 All results are saved in `output/<step>/<timestamp>/`, where `<timestamp>` is the date and time when you launched `main.py`.
 
-## Running the Pipeline
+## Running scripts separately
 
 Each script in the pipeline can also be run independently, in order to perform a specific analysis stage.
 
